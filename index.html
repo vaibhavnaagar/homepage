@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Vaibhav Nagar</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="js/jquery-2.1.3.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" href="favicon1.ico">
+
+	<!-- Custom Style  -->
+	<style>
+	.fa-facebook:hover{
+		color: #3b5998;
+	}
+	.fa-linkedin:hover{
+		color: #0077b5;
+	}
+	.fa-google-plus:hover{
+		color: #dd4b39;
+	}
+	.fa-github:hover{
+		color: #666666;
+	}
+	div.contact-info a{
+		font-size: 2rem;
+		color: rgba(255, 255, 255, 0.4);
+	}
+	div.contact-info a:hover{
+		color: #CB6318;
+	}
+	.footer-social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+	.footer-social .fa-facebook:hover { 
+    background-color: #3b5998; 
+}
+	.footer-social .fa-google-plus:hover { 
+    background-color: #dd4b39; 
+}
+	.footer-social .fa-github:hover { 
+    background-color: #999999; 
+}
+	.footer-social .fa-linkedin:hover { 
+    background-color: #0077b5; 
+}
+	.footer-social .fa-instagram:hover { 
+    background-color: #c13584; 
+}
+	.footer-social .fa-twitter:hover { 
+    background-color: #55acee; 
+}
+	</style>
+
+	 <script>
+		jQuery.fn.mouseIsOver = function () {
+		    if($(this[0]).is(":hover"))
+		    {
+		        return true;
+		    }
+		    return false;
+		};
+
+   		var interval = 1;
+
+		setInterval(function(){
+		   if(interval == 3 && !($('#intro').mouseIsOver()) && !($('.top-bar').mouseIsOver()) ){
+		       $('.top-bar').fadeOut(); 
+		       interval = 1; 
+		   }
+		   interval = interval+1;
+		},1000);
+
+		$(document).bind('mousemove keypress', function() {
+		    $('.top-bar').fadeIn();
+		    interval = 1; 
+		});
+   </script>
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">Vaibhav</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Internships</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Projects</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+						<li><a href="experiences.html" title="">Work Experience</a></li>				
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+				 <img class="img-responsive" src="img/profile.jpg" alt="" style="height: 240px; width:240px; border-radius: 120px;">
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Vaibhav Nagar</h1>
+
+	   			<p class="intro-position">
+	   				<span>Junior Undergraduate</span>
+	   				<span>CSE-IIT Kanpur</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://www.facebook.com/vaibhav.naagar4" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/vaibhav-nagar-81a0b4b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://github.com/vaibhavnaagar" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://plus.google.com/106160392175218638223" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img class="img-responsive" src="images/profile-org-1.jpg" alt="Profile Picture" style="height: 100px; width: 100px;border-radius: 50%;">
+
+   				<p class="lead">I'm a Junior Undergradute student in the Computer Science department at Indian Student of Technology, Kanpur. I am passionate about coding and learning new things in life which are mostly related to computer science, physics and universe. Apart from studies, in free time I like to watch anime and videos from vasuce and some other science channels. Other than that I like to play Badminton, chess, cricket and love to swim.   </p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Contact me" class="button stroke smoothscroll">Contact Me</a>
+   			<a href="resources/cv.pdf" title="Resume" class="button button-primary" target="_blank">Resume</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Internship</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Gained tons of experience by working in the companies as an software intern.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<!--<div class="col-twelve resume-header">
+
+   			<h2>Internship</h2>
+
+   		</div>--> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Software Developer</h3>
+	   					<p>May 2016 - July 2016</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Monet Networks Inc.</h4>
+	   					<p>Monet platform provides a way to capture, track and analyze video content in real-time and at scale using non-verbal cues (NVCs) from online viewers or tradional on-line panels within select demographics. Brands or content creators are provided a dashboard to push their content to traditional on-line panels, or a community of incentivized users. Monet platform collects the users rich audio and video reactions at scale and presents real-time actionable intelligence on content effectiveness to brands and content creators based on emotional engagement metrics and their cross-correlation with user self reported data.</p>
+	   					<div class="row button-section">
+	   						<div class="col-twelve">
+	   					<a href="experiences.html#monet" title="More Details" class="button  button-primary">More Details</a>
+	   				</div>
+	   				</div>
+	   				</div>
+	   			</div> <!-- /timeline-block -->
+
+	   	<!--		<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Front-end Developer</h3>
+	   					<p>July 2014 - June 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Super Cool Agency</h4>
+	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+	   				</div>
+
+	   			</div>--> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Projects</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead"></p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/projects/gyro.jpg" alt="Gyro-Stabilized Plane" style="height: inherit; width: inherit;">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Gyro-Stabilized RC Plane</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Embedded Programming
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/projects/rob.jpg" alt="Game of Cops and Robbers on Graphs" >
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">The Game of Cops and Robbers on Graphs</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Theoretical Project
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/projects/modals/m-gyro.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Gyro-Stabilized RC Plane <br/> <small style="color: rgba(0,0,0,0.6);">(Summer'15 project under Aero-modelling Club)</small><small style="float: right;color: rgba(0,0,0,0.6);">May-Jun'15</small></h4>	
+					      <p>A composite RC plane which has self-balancing ability while flying in mid air. It can stabilize itself, whenever the external factors like high wind speed tries to alter the orientation of plane, by manipulating its main control units using arduino micro-processor... </p>
+
+					      <div class="categories">Embedded Programming</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="experiences.html#gyro">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/projects/modals/m-rob.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>The Game of Cops and Robbers on Graphs <br/><small style="color: rgba(0,0,0,0.6);">(Discrete Maths-Course project)</small><small style="float: right;color: rgba(0,0,0,0.6);">Aug-Nov'15</small> </h4>		      
+					      <p>The game of cops and robbers is played with a set of ‘cops’ and a ‘robber’ who occupy some vertices of a graph. Both sides have perfect information and they move alternately to adjacent vertices. The robber is captured if at least one of the cops occupies the same vertex as the robber...</p>
+
+					      <div class="categories">Theoretical Course Project</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="experiences.html#game">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+
+
+	<!--			   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Salad</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> --><!-- /modal-03 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Location</h5>
+
+   			<p><a href="https://www.google.co.in/maps/place/Hall+Of+Residence+V/@26.5105798,80.2266696,16.02z/data=!4m13!1m7!3m6!1s0x399c3701c4a8be71:0x3afbe880abc38436!2sIndian+Institute+of+Technology+Kanpur!3b1!8m2!3d26.5123388!4d80.2329!3m4!1s0x0:0xfe99b26e0ddd5b04!8m2!3d26.5095703!4d80.2282975" target="_blank">
+            B-311/Hall-5<br>
+            IIT Kanpur, 208016.</a>
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p><a href="mailto:vaibhavn@iitk.ac.in" target="_blank">vaibhavn@iitk.ac.in</a>			     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p><a href="tel:07843850644" target="_blank">(+91) 7843850644</a>
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+					<li><a href="https://www.facebook.com/vaibhav.naagar4" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/vaibhav-nagar-81a0b4b8" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://github.com/vaibhavnaagar" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://plus.google.com/106160392175218638223" target="_blank"><i class="fa fa-google-plus"></i></a></li>	
+         <li><a href="https://www.instagram.com/vaibhavnaagar/" target="_blank"><i class="fa fa-instagram"></i></a></li>	
+         <li><a href="https://twitter.com/vaibhavnaagar77" target="_blank"><i class="fa fa-twitter"></i></a></li>	
+			   </ul> 
+	      		
+	      </div>
+
+
+	      <div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Created using bootstrap kards</span> 
+		        	<span> <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
